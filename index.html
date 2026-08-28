@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="A little digital gift for Juju." />
+  <title>For Juju, always</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <button class="music-toggle" id="musicToggle" aria-label="Play background music" aria-pressed="false"><span>♫</span></button>
+  <audio id="backgroundMusic" loop preload="none"><source src="music/Veg Melody Instrumental Cheeni Kum A Sugar Free Romance 128 Kbps.mp3" type="audio/mpeg" /></audio>
+
+  <main>
+    <section class="hero" id="top" aria-label="Opening gift">
+      <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+      <div class="hero-particles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="hero-content">
+        <p class="eyebrow hero-animate delay-1">a little digital gift</p>
+        <h1 class="hero-animate delay-2">Hey, <em>Juju...</em></h1>
+        <p class="hero-copy hero-animate delay-3">I made something special for you.<br />A few small moments, kept close.</p>
+        <a class="button hero-animate delay-4" href="#story">Open your gift <span>→</span></a>
+      </div>
+      <p class="hero-note">made for my favourite person</p>
+    </section>
+
+    <section class="section story" id="story">
+      <div class="section-intro reveal"><p class="eyebrow">01 / a few pages back</p><h2>Our little <em>story.</em></h2><p>Not a complete history. Just the moments I’d frame forever.</p></div>
+      <div class="timeline">
+        <!-- CHANGE photos, titles, dates, and captions here -->
+        <article class="memory reveal"><div class="memory-image"><img src="images/2.jpg" alt="[ADD JUJU PHOTO HERE] A favourite shared memory" /></div><div class="memory-copy"><p class="memory-date"></p><h3>Remember this day?</h3><p> One of those ordinary days that somehow became one of my favourites.</p></div></article>
+        <article class="memory memory-reverse reveal"><div class="memory-image"><img src="images/3.jpg" alt="[ADD JUJU PHOTO HERE] A favourite shared memory" loading="lazy" /></div><div class="memory-copy"><p class="memory-date"</p><h3>Us, as always.</h3><p> Some moments are impossible to forget — especially with you in them.</p></div></article>
+        <article class="memory reveal"><div class="memory-image"><img src="images/1.jpeg" alt="[ADD JUJU PHOTO HERE] A favourite shared memory" loading="lazy" /></div><div class="memory-copy"><p class="memory-date"></p><h3>The little things.</h3><p>The kind of memory that still makes me smile for no reason.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="gallery">
+      <div class="section-intro reveal"><p class="eyebrow">02 / collected moments</p><h2>A gallery of <em>us.</em></h2><p>Click a memory to see it a little closer.</p></div>
+      <!-- CHANGE file names and captions below. All photos live in /images -->
+      <div class="gallery" aria-label="Memory photo gallery">
+        <button class="gallery-item tall reveal" data-caption="[ADD A CAPTION FOR THIS MEMORY]" aria-label="Open photo 1"><img src="images/1.jpeg" alt="[ADD JUJU PHOTO HERE]" loading="lazy" /></button>
+        <button class="gallery-item wide reveal" data-caption="[ADD A CAPTION FOR THIS MEMORY]" aria-label="Open photo 2"><img src="images/5.jpg" alt="[ADD JUJU PHOTO HERE]" loading="lazy" /></button>
+        <button class="gallery-item reveal" data-caption="[ADD A CAPTION FOR THIS MEMORY]" aria-label="Open photo 3"><img src="images/4.jpg" alt="[ADD JUJU PHOTO HERE]" loading="lazy" /></button>
+        <button class="gallery-item angled reveal" data-caption="[ADD A CAPTION FOR THIS MEMORY]" aria-label="Open photo 4"><img src="images/3.jpg" alt="[ADD JUJU PHOTO HERE]" loading="lazy" /></button>
+        <button class="gallery-item wide reveal" data-caption="[ADD A CAPTION FOR THIS MEMORY]" aria-label="Open photo 5"><img src="images/2.jpg" alt="[ADD JUJU PHOTO HERE]" loading="lazy" /></button>
+      </div>
+    </section>
+
+    <section class="section love" id="love">
+      <div class="section-intro reveal"><p class="eyebrow">03 / just so you know</p><h2>Things I love<br />about <em>Juju.</em></h2></div>
+      <div class="love-grid">
+        <!-- CHANGE each message to make this entirely yours -->
+        <button class="love-card reveal"><span class="love-number">01</span><h3>Her heart</h3><p> You care so deeply, even when no one is watching.</p><span class="card-hint">tap to read</span></button>
+        <button class="love-card reveal"><span class="love-number">02</span><h3>Her laugh</h3><p> Somehow it makes every room feel lighter.</p><span class="card-hint">tap to read</span></button>
+        <button class="love-card reveal"><span class="love-number">03</span><h3>Her support</h3><p> You have always made me feel like I can do hard things.</p><span class="card-hint">tap to read</span></button>
+        <button class="love-card reveal"><span class="love-number">04</span><h3>Her advice</h3><p> Honest, loving, and usually exactly what I need.</p><span class="card-hint">tap to read</span></button>
+        <button class="love-card reveal"><span class="love-number">05</span><h3>Her magic</h3><p> There is no one else in the world quite like you.</p><span class="card-hint">tap to read</span></button>
+        <button class="love-card reveal"><span class="love-number">06</span><h3>Her being here</h3><p> The best part is simply getting to call you my sister.</p><span class="card-hint">tap to read</span></button>
+      </div>
+    </section>
+
+    <section class="surprise" id="surprise">
+      <div class="surprise-inner reveal"><p class="eyebrow">04 / one more thing</p><h2>Juju... I have<br />one more thing<br />for <em>you.</em></h2>
+        <button class="envelope-wrap" id="envelope" aria-expanded="false" aria-label="Open your letter"><span class="envelope"><span class="envelope-flap"></span><span class="envelope-face"></span><span class="seal">♥</span><span class="letter-peek">for juju</span></span><span class="envelope-label">Open me <span>💌</span></span></button>
+      </div>
+    </section>
+
+    <section class="ending" id="ending"><div class="ending-inner reveal"><span class="tiny-heart" id="secretHeart" role="button" tabindex="0" aria-label="A tiny hidden heart">♥</span><p class="eyebrow">with all my love</p><h2>JUJU <span>♥</span></h2><p class="ending-copy">No matter where life takes us,<br />you’ll always be my Juju.</p><p class="made">Made with <span>♥</span></p><a class="button button-light" href="#top">Replay our story <span>↻</span></a><p class="secret-message" id="secretMessage" role="status">You found the secret 👀♥<br />You’ll always have a place in my favourite memories.</p></div></section>
+  </main>
+
+  <dialog class="lightbox" id="lightbox"><button class="close" aria-label="Close photo">×</button><figure><img id="lightboxImage" src="" alt="" /><figcaption id="lightboxCaption"></figcaption></figure></dialog>
+  <dialog class="letter-modal" id="letterModal"><button class="close" aria-label="Close letter">×</button><article class="letter"><p class="letter-label">a note for you</p><!-- EDIT YOUR FULL LETTER BELOW --> <div class="letter-text"><p>Dear Juju,</p><p>There are some things I don’t always say out loud...</p><p>Thank you for always being there. For the laughter, the advice, the warmth, and for being the person I can always come back to.</p><p>No matter how much we grow up, you’ll always be my Juju.</p><p>❤️</p></div><p class="signature">Your dhruv</p></article></dialog>
+  <script src="script.js"></script>
+</body>
+</html>
